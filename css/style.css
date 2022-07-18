@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(30, 38%, 92%);
+    font-family:'Montserrat', sans-serif;;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-container{
+    width: 40%;
+    display: flex;
+    border: none;
+    margin: 50px auto;
+    box-shadow: 0 0 4px hsl(228, 12%, 48%);
+    border-radius: 15px;
+}
+
+.image-container{
+    width: 50%;
+    background: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius:15px ;
+}
+
+.content-container{
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h3{
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+}
+
+h1{
+    font-family: fraunces;
+    color: hsl(212, 21%, 14%);
+    margin: 20px 0;
+    font-size: 1.8rem;
+    width: 90%;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price h1{
+    color: hsl(158, 36%, 37%);
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+button{
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: hsl(158, 33%, 44%);
+}
+
+i.fa{
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+@media  (max-width:375px) {
+    .card-container{
+        display: block;
+        width: 90%;
+    }
+
+    .image-container{
+        width: 100%;
+        height: 200px;
+        background: url(../images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+
+    .content-container{
+        width: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
